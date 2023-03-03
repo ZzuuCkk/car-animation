@@ -1,0 +1,96 @@
+@keyframes truck {
+    0% {
+         left: 0%;
+    }
+    25% {
+             left: 25%;
+    }
+    50% {
+            left: 50%; 
+    }
+    75% {
+             left:75%;
+    }
+    100% {
+             left: 90%;
+    }    
+ }
+
+
+ @keyframes sport{
+
+    0% {
+            right: 0%;
+    }
+    25% {
+            right: 25%;
+    }
+    50% {
+            right: 50%; 
+    }
+    75% {
+            right:75%;
+    }
+    100% {
+            right: 90%;
+            
+    } 
+
+
+
+ }
+ @keyframes sun {
+	from {
+		box-shadow: 0 0 100px #ff0, 0 0 100px #ff0;
+        
+	}
+	to {
+		box-shadow: 0 0 25px #ff0, 0 0 75px #ff0;
+	}
+}
+
+
+
+@keyframes redlight{
+    from{
+        background-color: black;
+    }
+
+    to{
+        background-color: red;
+    }
+}
+
+
+@keyframes redlight{
+    from{
+        background-color: rgb(62, 48, 48);
+    }
+
+    to{
+        background-color: red;
+    }
+}
+
+@keyframes yellowlight{
+    from{
+        background-color: rgb(68, 68, 19);;
+    }
+
+    to{
+        background-color: yellow;
+    }
+}
+
+
+
+
+@keyframes greenlight{
+    from{
+        background-color: rgb(20, 31, 20);
+    }
+
+    to{
+        background-color: green;
+    }
+}

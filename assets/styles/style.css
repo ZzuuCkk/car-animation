@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.road{
+    position: relative;
+    margin: auto;
+    height: 800px;
+    width:1600px;
+    background-image: url("../images/background1.jpg");
+    background-size:cover;
+}
+
+
+.sun{
+    opacity: 1;
+	box-shadow: 10px 8px 15px 80px yellow;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+    animation-name: sun;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+	border-radius: 50%;
+	background-image: radial-gradient(circle, #ffd200 95%, #f7971e);
+}
+.truck{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    animation-name: truck;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+}
+
+
+.sport{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    animation-name: sport;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+
+.traffic_light{
+    background-color: black;
+    opacity: 80%;
+    width: 40px;
+    height: 160px;
+    position: relative;
+    top:calc(50% + 87px);
+    left: 50%;
+    border-radius: 20px;
+    /* transform: rotate(-90deg); */
+
+}
+
+.traffic_light::before{
+    content: "";
+    width: 5px;
+    height: 50px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    z-index: 0;
+}
+.red{
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(62, 48, 48);
+    margin: auto;
+    animation-name:redlight;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+.yellow{
+    position: absolute;
+    top:33%;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(68, 68, 19);
+    margin: auto; 
+    animation-name:yellowlight;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;    
+
+
+
+}
+.green{
+    position: absolute;
+    top:66%;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(20, 31, 20);
+    margin: auto; 
+    animation-name:greenlight;
+    animation-delay: 4s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+    
+}
